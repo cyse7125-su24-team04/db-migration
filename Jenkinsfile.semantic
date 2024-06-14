@@ -8,7 +8,7 @@ pipeline {
                     checkout([
                         $class: 'GitSCM',
                         branches: [[name: 'main']],
-                        userRemoteConfigs: [[credentialsId: 'github_token', url: 'https://github.com/cyse7125-su24-team04/helm-test.git']]
+                        userRemoteConfigs: [[credentialsId: 'github_token', url: 'https://github.com/cyse7125-su24-team04/helm-webapp-cve-processor.git']]
                     ])
                 }
             }
